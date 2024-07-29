@@ -2,7 +2,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vm="using:ControleEstoque.AvaloniaUI.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="ControleEstoque.AvaloniaUI.Views.OrdemPageView">
-  Welcome to Avalonia!
+             x:Class="ControleEstoque.AvaloniaUI.Views.OrdemPageView"
+			 x:DataType="vm:OrdemPageViewModel">
+
+	<UserControl.DataContext>
+		<vm:OrdemPageViewModel/>
+	</UserControl.DataContext>
+
+	<Grid RowDefinitions="*, 5*">
+		<!-- Conteúdo superior pode ser adicionado aqui -->
+
+		<DataGrid Grid.Row="1" x:Name="ordensDataGrid" ItemsSource="{Binding Ordens}" AutoGenerateColumns="False">
+			<DataGrid.Columns>
+				<DataGridTextColumn Header="Nº Ordem" Binding="{Binding NumeroOrdem}" IsReadOnly="true" Width="*"/>
+				<DataGridTextColumn Header="Descrição" Binding="{Binding Descricao}" IsReadOnly="true" Width="*"/>
+				<DataGridTextColumn Header="Localização Almox" Binding="{Binding LocalizacaoAlmox}" IsReadOnly="true" Width="*"/>
+				<DataGridTextColumn Header="Status" Binding="{Binding Status}" IsReadOnly="true" Width="*"/>
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+	
+     
 </UserControl>

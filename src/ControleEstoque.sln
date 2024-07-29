@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{04196C61-AA6D-4CD1-8352-567147002E8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A38832D6-C587-4F31-86F7-DC460E2056A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1FA761DA-AF39-4E5A-9527-61BC11DCFE27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI", "ControleEstoque.AvaloniaUI\ControleEstoque.AvaloniaUI.csproj", "{97446DC5-B812-4698-8FB2-BCACE15CC2DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI.Desktop", "ControleEstoque.AvaloniaUI.Desktop\ControleEstoque.AvaloniaUI.Desktop.csproj", "{236D7BAA-C103-4413-8136-D41497BEA71D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236D7BAA-C103-4413-8136-D41497BEA71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236D7BAA-C103-4413-8136-D41497BEA71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236D7BAA-C103-4413-8136-D41497BEA71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236D7BAA-C103-4413-8136-D41497BEA71D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97446DC5-B812-4698-8FB2-BCACE15CC2DB} = {04196C61-AA6D-4CD1-8352-567147002E8F}
+		{236D7BAA-C103-4413-8136-D41497BEA71D} = {04196C61-AA6D-4CD1-8352-567147002E8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3DB68B5-B175-4246-B4AD-C15AA48E3007}
+	EndGlobalSection
+EndGlobal

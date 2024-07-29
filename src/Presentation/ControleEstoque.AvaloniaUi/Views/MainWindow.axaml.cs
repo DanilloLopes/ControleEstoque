@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace ControleEstoque.AvaloniaUi.Views;
+namespace ControleEstoque.AvaloniaUI.Views;
 
 public partial class MainWindow : Window
 {

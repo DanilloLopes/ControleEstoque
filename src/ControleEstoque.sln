@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A38832D6-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{1FA761DA-AF39-4E5A-9527-61BC11DCFE27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI", "ControleEstoque.AvaloniaUI\ControleEstoque.AvaloniaUI.csproj", "{97446DC5-B812-4698-8FB2-BCACE15CC2DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI", "Presentation\ControleEstoque.AvaloniaUI\ControleEstoque.AvaloniaUI.csproj", "{0ED3BCD6-FC45-4AB6-B490-A164748B8239}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI.Desktop", "ControleEstoque.AvaloniaUI.Desktop\ControleEstoque.AvaloniaUI.Desktop.csproj", "{236D7BAA-C103-4413-8136-D41497BEA71D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI.Desktop", "Presentation\ControleEstoque.AvaloniaUI.Desktop\ControleEstoque.AvaloniaUI.Desktop.csproj", "{7C63790F-5595-400C-9F75-F6A7248637A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,21 +19,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97446DC5-B812-4698-8FB2-BCACE15CC2DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{236D7BAA-C103-4413-8136-D41497BEA71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{236D7BAA-C103-4413-8136-D41497BEA71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{236D7BAA-C103-4413-8136-D41497BEA71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{236D7BAA-C103-4413-8136-D41497BEA71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED3BCD6-FC45-4AB6-B490-A164748B8239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED3BCD6-FC45-4AB6-B490-A164748B8239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED3BCD6-FC45-4AB6-B490-A164748B8239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED3BCD6-FC45-4AB6-B490-A164748B8239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C63790F-5595-400C-9F75-F6A7248637A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C63790F-5595-400C-9F75-F6A7248637A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C63790F-5595-400C-9F75-F6A7248637A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C63790F-5595-400C-9F75-F6A7248637A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{97446DC5-B812-4698-8FB2-BCACE15CC2DB} = {04196C61-AA6D-4CD1-8352-567147002E8F}
-		{236D7BAA-C103-4413-8136-D41497BEA71D} = {04196C61-AA6D-4CD1-8352-567147002E8F}
+		{0ED3BCD6-FC45-4AB6-B490-A164748B8239} = {04196C61-AA6D-4CD1-8352-567147002E8F}
+		{7C63790F-5595-400C-9F75-F6A7248637A8} = {04196C61-AA6D-4CD1-8352-567147002E8F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3DB68B5-B175-4246-B4AD-C15AA48E3007}

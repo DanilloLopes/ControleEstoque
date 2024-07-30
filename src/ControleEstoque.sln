@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI.Desktop", "Presentation\ControleEstoque.AvaloniaUI.Desktop\ControleEstoque.AvaloniaUI.Desktop.csproj", "{7C63790F-5595-400C-9F75-F6A7248637A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleEstoque.DataModels", "Core\ControleEstoque.DataModels\ControleEstoque.DataModels.csproj", "{3EECADF5-F074-4832-9F95-BBE24B1EDF59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleEstoque.Core", "ControleEstoque.Core\ControleEstoque.Core.csproj", "{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{7C63790F-5595-400C-9F75-F6A7248637A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C63790F-5595-400C-9F75-F6A7248637A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C63790F-5595-400C-9F75-F6A7248637A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +46,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0ED3BCD6-FC45-4AB6-B490-A164748B8239} = {04196C61-AA6D-4CD1-8352-567147002E8F}
 		{7C63790F-5595-400C-9F75-F6A7248637A8} = {04196C61-AA6D-4CD1-8352-567147002E8F}
+		{3EECADF5-F074-4832-9F95-BBE24B1EDF59} = {A38832D6-C587-4F31-86F7-DC460E2056A5}
+		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60} = {A38832D6-C587-4F31-86F7-DC460E2056A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3DB68B5-B175-4246-B4AD-C15AA48E3007}

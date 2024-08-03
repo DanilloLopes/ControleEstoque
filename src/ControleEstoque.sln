@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.AvaloniaUI.Desktop", "Presentation\ControleEstoque.AvaloniaUI.Desktop\ControleEstoque.AvaloniaUI.Desktop.csproj", "{7C63790F-5595-400C-9F75-F6A7248637A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleEstoque.DataModels", "Core\ControleEstoque.DataModels\ControleEstoque.DataModels.csproj", "{3EECADF5-F074-4832-9F95-BBE24B1EDF59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.DataModels", "Core\ControleEstoque.DataModels\ControleEstoque.DataModels.csproj", "{3EECADF5-F074-4832-9F95-BBE24B1EDF59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleEstoque.Core", "ControleEstoque.Core\ControleEstoque.Core.csproj", "{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.Infra.Mysql", "Infra\ControleEstoque.Infra.Mysql\ControleEstoque.Infra.Mysql.csproj", "{F6BE5F29-387F-4BA2-9906-50E018D3B2F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControleEstoque.Core", "Core\ControleEstoque.Core\ControleEstoque.Core.csproj", "{56039644-6039-4F37-97EB-78B30063CB88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,14 @@ Global
 		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EECADF5-F074-4832-9F95-BBE24B1EDF59}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6BE5F29-387F-4BA2-9906-50E018D3B2F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6BE5F29-387F-4BA2-9906-50E018D3B2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6BE5F29-387F-4BA2-9906-50E018D3B2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6BE5F29-387F-4BA2-9906-50E018D3B2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56039644-6039-4F37-97EB-78B30063CB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56039644-6039-4F37-97EB-78B30063CB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56039644-6039-4F37-97EB-78B30063CB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56039644-6039-4F37-97EB-78B30063CB88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,7 +53,8 @@ Global
 		{0ED3BCD6-FC45-4AB6-B490-A164748B8239} = {04196C61-AA6D-4CD1-8352-567147002E8F}
 		{7C63790F-5595-400C-9F75-F6A7248637A8} = {04196C61-AA6D-4CD1-8352-567147002E8F}
 		{3EECADF5-F074-4832-9F95-BBE24B1EDF59} = {A38832D6-C587-4F31-86F7-DC460E2056A5}
-		{0B4FBEA1-2D04-4AE9-940A-33FCA4D6CD60} = {A38832D6-C587-4F31-86F7-DC460E2056A5}
+		{F6BE5F29-387F-4BA2-9906-50E018D3B2F3} = {1FA761DA-AF39-4E5A-9527-61BC11DCFE27}
+		{56039644-6039-4F37-97EB-78B30063CB88} = {A38832D6-C587-4F31-86F7-DC460E2056A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E3DB68B5-B175-4246-B4AD-C15AA48E3007}

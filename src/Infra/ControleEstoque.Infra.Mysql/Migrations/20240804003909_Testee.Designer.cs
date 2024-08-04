@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleEstoque.Infra.Mysql.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240803052239_Teste")]
-    partial class Teste
+    [Migration("20240804003909_Testee")]
+    partial class Testee
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -63,6 +63,9 @@ namespace ControleEstoque.Infra.Mysql.Migrations
                     b.Property<int>("NumeroOrdem")
                         .HasColumnType("int");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Ordem", (string)null);
@@ -70,26 +73,18 @@ namespace ControleEstoque.Infra.Mysql.Migrations
 
             modelBuilder.Entity("ControleEstoque.DataModels.Entities.OrdemItens", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("OrdemId")
                         .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("ItemId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrdemId")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("OrdemId", "ItemId");
 
                     b.HasIndex("ItemId");
-
-                    b.HasIndex("OrdemId");
 
                     b.ToTable("OrdemItens", (string)null);
                 });

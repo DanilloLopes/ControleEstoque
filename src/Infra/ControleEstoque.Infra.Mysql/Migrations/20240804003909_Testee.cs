@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ControleEstoque.Infra.Mysql.Migrations
 {
     /// <inheritdoc />
-    public partial class Teste : Migration
+    public partial class Testee : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -40,7 +40,8 @@ namespace ControleEstoque.Infra.Mysql.Migrations
                     Descricao = table.Column<string>(type: "varchar(100)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     DataCadastro = table.Column<DateTime>(type: "datetime", nullable: false),
-                    NumeroOrdem = table.Column<int>(type: "int", nullable: false)
+                    NumeroOrdem = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -52,15 +53,13 @@ namespace ControleEstoque.Infra.Mysql.Migrations
                 name: "OrdemItens",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     OrdemId = table.Column<int>(type: "int", nullable: false),
                     ItemId = table.Column<int>(type: "int", nullable: false),
                     Quantidade = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_OrdemItens", x => x.Id);
+                    table.PrimaryKey("PK_OrdemItens", x => new { x.OrdemId, x.ItemId });
                     table.ForeignKey(
                         name: "FK_OrdemItens_Item_ItemId",
                         column: x => x.ItemId,
@@ -78,11 +77,6 @@ namespace ControleEstoque.Infra.Mysql.Migrations
                 name: "IX_OrdemItens_ItemId",
                 table: "OrdemItens",
                 column: "ItemId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrdemItens_OrdemId",
-                table: "OrdemItens",
-                column: "OrdemId");
         }
 
         /// <inheritdoc />

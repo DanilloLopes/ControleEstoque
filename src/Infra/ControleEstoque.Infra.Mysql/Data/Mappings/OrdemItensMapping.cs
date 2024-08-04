@@ -15,7 +15,7 @@ namespace ControleEstoque.Infra.Mysql.Data.Mappings
         {
             builder.ToTable("OrdemItens");
 
-            builder.HasKey(p => p.Id);
+            builder.HasKey(oi => new { oi.OrdemId, oi.ItemId });
 
             builder.Property(oi => oi.Quantidade)
                 .HasColumnType("int")

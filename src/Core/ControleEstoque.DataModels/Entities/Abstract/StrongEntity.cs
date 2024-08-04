@@ -16,6 +16,6 @@ namespace ControleEstoque.DataModels.Entities.Abstract
         /// Identificador único da entidade. 
         /// </summary>
         [Required]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }
